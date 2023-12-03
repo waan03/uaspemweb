@@ -7,7 +7,7 @@ export function navbar() {
 
   return (
     <>
-    <header className="sticky top-0 z-30 w-full p-0  shadow">
+    <header className="sticky top-0 z-30 w-full p-0 shadow drop-shadow-">
     <div className='bg-[#15141F] w-full p-0 h-auto z-40'>
         <div className='py-8 pl-32 flex justify-between items-center'>
             <div>
@@ -20,10 +20,10 @@ export function navbar() {
                 />
                 </a>
             </div> 
-            <div className='w-max '>
+            <div className='w-max'>
                 <ul className='grid gap-4 grid-cols-3'>
                     <li 
-                    className=' inline-block align-bottom text-xl border-b-2 w-max border-[#FED9B7]'
+                    className='inline-block align-bottom text-xl border-b-2 w-max border-[#FED9B7]'
                     >
                         Home
                     </li>
@@ -39,8 +39,12 @@ export function navbar() {
                     </li>
                 </ul>
             </div>
-            <div>
-                <FaUser />
+            <div className='bg-white w-48 h-14 flex items-center rounded-l-full'>
+                <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">
+                <FaUser 
+                color="15141F"
+                size={30}/>
+                </div>
             </div>
         </div>
         
