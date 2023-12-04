@@ -25,17 +25,17 @@ export function navbar() {
                     <li 
                     className='inline-block align-bottom text-xl border-b-2 w-max border-[#FED9B7]'
                     >
-                        Home
+                    <a href="/home">Home</a>
                     </li>
                     <li 
                     className='inline-block align-bottom text-xl border-b-2 w-max border-[#FED9B7]'
                     >
-                        My List
+                    <a href="/myList">My List </a>
                     </li>
                     <li 
                     className=' inline-block align-bottom text-xl border-b-2 w-max border-[#FED9B7]'
                     >
-                        About Us 
+                    <a href="/aboutUs">About</a>
                     </li>
                 </ul>
             </div>

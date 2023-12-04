@@ -11,7 +11,7 @@ export default function page() {
       <div className="flex justify-center items-center">
             <Image
                 src="/assets/images/KNYhome.jpg"
-                className="blur"
+                className="blur "
                 width={0}
                 height={0}
                 sizes="100vw"
