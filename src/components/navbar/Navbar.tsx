@@ -39,11 +39,19 @@ export function navbar() {
                     </li>
                 </ul>
             </div>
-            <div className='bg-white w-48 h-14 flex items-center rounded-l-full'>
+            <div className='bg-white w-64 h-14 py-8 flex items-center rounded-l-full'>
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">
                 <FaUser 
                 color="15141F"
                 size={30}/>
+                </div>
+                <div className='pl-2 py-0'>
+                    <p className='text-[#15141F] font-bold'>
+                        USER
+                    </p>
+                    <p className='text-[#15141F]'>
+                        ??
+                    </p>
                 </div>
             </div>
         </div>

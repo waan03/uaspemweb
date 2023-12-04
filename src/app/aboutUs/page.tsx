@@ -6,7 +6,10 @@ const page = () => {
   return (
     <>
     <Navbar/>
-    <div>About Us</div>
+    <div className='h-screen bg-white'>
+      <p className='text-black'>About Us</p>
+
+    </div>
     <Footer/>
     </>
   )
