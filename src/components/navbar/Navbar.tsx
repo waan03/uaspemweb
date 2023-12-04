@@ -7,7 +7,7 @@ export function navbar() {
 
   return (
     <>
-    <header className="sticky top-0 z-30 w-full p-0 shadow drop-shadow-">
+    <header className="sticky top-0 z-30 w-full p-0 shadow drop-shadow flex ">
     <div className='bg-[#15141F] w-full p-0 h-auto z-40'>
         <div className='py-8 pl-32 flex justify-between items-center'>
             <div>
