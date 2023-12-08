@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const page = () => {
   return (
-    <>
+    <div>
     <Navbar/>
     <div className='h-screen bg-white flex justify-center items-center '>
         <div className='flex w-fit px-80 justify-center items-center'>
@@ -30,7 +30,7 @@ const page = () => {
         </div>
     </div>
     <Footer/>
-    </>
+    </div>
   )
 }
 
