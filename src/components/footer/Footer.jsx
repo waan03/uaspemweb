@@ -1,7 +1,6 @@
 import React from 'react'
-import Image from 'next/image'
 
-export default function Footer() {
+const Footer = () => {
   return (
     <div className='relative'>
         <div className='static bottom-0 left-0'>
@@ -19,3 +18,5 @@ export default function Footer() {
     </div>
   )
 }
+
+export default Footer
