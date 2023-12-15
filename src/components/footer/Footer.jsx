@@ -6,7 +6,7 @@ const Footer = () => {
         <div className='static bottom-0 left-0'>
             <div className='bg-[#15141F] w-full px-32 h-auto '>
                 <div className='py-10'>
-                    <Image
+                    <img
                     src="/assets/images/logo.svg"
                     width={150}
                     height={150}

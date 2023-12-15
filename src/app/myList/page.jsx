@@ -1,4 +1,4 @@
-
+"use client";
 import React from 'react'
 import { navbar as Navbar } from "@/components/navbar/Navbar"; 
 import Footer from '@/components/footer/Footer';
@@ -21,7 +21,7 @@ export default function page() {
       {/* ITEMS */}
       <div className='pl-32 flex items-center flex-col '>
         <div className='flex items-center'>
-          <div className='pr-8'>
+            <div className='pr-8'>
             <p className='text-4xl text-black '>
               1
             </p>

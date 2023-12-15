@@ -45,14 +45,14 @@ export default function Login() {
             </form>
           </div>
           {/* <div className="bg-white"> */}
-          <Image
+          <img
             className="bottom-0 left-0 absolute"
             src="/assets/images/login/left-rounded.png"
             width={250}
             height={250}
             alt="assets circle left"
           />
-          <Image
+          <img
             className="top-0 right-0 absolute"
             src="/assets/images/login/right-rounded.png"
             width={250}
@@ -63,7 +63,7 @@ export default function Login() {
         </div>
         <div className="col-span-2 flex justify-center items-center">
           <div>
-            <Image
+            <img
               className=""
               src="/assets/images/login/logo-kemenhub.png"
               width={500}
