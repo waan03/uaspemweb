@@ -19,7 +19,8 @@ export default function page() {
         />
         <div className="absolute text-[#15141F] w-2/5 py-5">
           <div className="grid-col">
-            <div className="py-10 flex-col">
+            <div>
+               <div className="py-10 flex-col">
               <p className="text-4xl font-bold">KIMETSU NO YAIBA</p>
               <p>鬼滅の刃</p>
               <p className="pt-5">
@@ -33,8 +34,10 @@ export default function page() {
               </p>
             </div>
             <div>button</div>
+            </div>
+            <img src="/assets/images/Home/BannerKNY.png" alt="gambar" />
           </div>
-          <img src="/assets/images/Home/BannerKNY.png" alt="gambar" />
+          
         </div>
       </div>
       <Footer />
