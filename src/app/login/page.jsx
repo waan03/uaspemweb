@@ -6,12 +6,6 @@ import { useState } from "react";
 
 export default function Login() {
   
-  // const [captchaIsDone, setCaptchaDone] = useState(false);
-  // function onChange(){
-  //   console.log('Captcha Verified')
-  //   setCaptchaDone(true)
-  // }
-
   return (
     <>
       <div className="grid grid-cols-3 h-screen w-full bg-[url(/assets/images/login/background.png)] bg-no-repeat">
@@ -45,29 +39,17 @@ export default function Login() {
             </form>
           </div>
           {/* <div className="bg-white"> */}
-          <img
-            className="bottom-0 left-0 absolute"
-            src="/assets/images/login/left-rounded.png"
-            width={250}
-            height={250}
-            alt="assets circle left"
-          />
-          <img
-            className="top-0 right-0 absolute"
-            src="/assets/images/login/right-rounded.png"
-            width={250}
-            height={250}
-            alt="assets circle right"
-          />
           {/* </div> */}
         </div>
-        <div className="col-span-2 flex justify-center items-center">
+        <div className="flex items-center static w-full">
           <div>
-            <img
-              className=""
-              src="/assets/images/login/logo-kemenhub.png"
-              width={500}
-              height={"250"}
+            <Image
+              className="w-full"
+              src="/assets/images/Login/Backgorund.png"
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "120%", height: "10%" }}
               alt="background"
             />
           </div>
