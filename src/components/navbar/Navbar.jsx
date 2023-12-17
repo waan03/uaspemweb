@@ -3,9 +3,10 @@ import React from "react";
 import { FaUser } from "react-icons/fa";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 const navigation = [
-  { name: "Home", href: "/home", current: false },
+  { name: "Home", href: "/home", current: true },
   { name: "My List", href: "/myList", current: false },
   { name: "About Us", href: "/aboutUs", current: false },
 ];
@@ -32,7 +33,7 @@ export function navbar() {
             <div className="w-max">
               <div className="ml-10 flex items-baseline space-x-4">
                 {navigation.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     className={classNames(
@@ -41,11 +42,11 @@ export function navbar() {
                         : "text-gray-300 hover:bg-gray-700 hover:text-white",
                       "p-2 rounded-md"
                     )}
-                    current={item.current ? "page" : true}
+                    current={item.current ? "active" : ""}
                     navLinks
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
