@@ -27,19 +27,11 @@ const dev = [
 
 const page = () => {
   return (
-<<<<<<< HEAD
-    <div>
-    <Navbar/>
-    <div className='h-screen bg-white flex justify-center items-center '>
-        <div className='flex w-fit px-80 justify-center items-center'>
-          <div className='flex flex-col pr-10 '>
-=======
     <>
       <Navbar />
       <div className="h-screen bg-white flex justify-center items-center ">
         <div className="flex w-fit px-80 justify-center items-center">
           <div className="flex flex-col pr-10 ">
->>>>>>> jeki
             <Image
               src="/assets/images/LogoDark.svg"
               alt="Logo"
@@ -64,13 +56,6 @@ const page = () => {
             </p>
           </div>
         </div>
-<<<<<<< HEAD
-    </div>
-    <Footer/>
-    </div>
-  )
-}
-=======
       </div>
       <div className="flex justify-center items-center bg-white w-full pb-8">
         <ul role="list" className="flex gap-x-8 overflow-x-auto">
@@ -101,7 +86,6 @@ const page = () => {
           ))}
         </ul>
       </div>
->>>>>>> jeki
 
       <Footer />
     </>
