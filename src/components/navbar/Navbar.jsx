@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import InputSearch from "./InputSearch"
 
 const navigation = [
   { name: "Home", href: "/home", current: false },
@@ -42,6 +43,9 @@ export function navbar() {
                 ))}
               </div>
             </div>
+
+            <InputSearch/>
+
             <div className="bg-white w-64 h-14 py-8 flex items-center rounded-l-full">
               <a href="/user">
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">
