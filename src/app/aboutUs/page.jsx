@@ -4,7 +4,7 @@ import Footer from "@/components/footer/Footer";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa6";
 
-const dev = [
+const devs = [
   {
     name: "Hieronimus Bonfillo",
     role: "Co-Founder / CEO",
@@ -59,13 +59,13 @@ const page = () => {
       </div>
       <div className="flex justify-center items-center bg-white w-full pb-8">
         <ul role="list" className="flex gap-x-8 overflow-x-auto">
-          {dev.map((person) => (
+          {devs.map((person) => (
             <li key={person.name} className="flex-shrink-0 gap-x-8">
               <div className="flex flex-col items-center gap-y-2 ">
                 <img
                   className="h-20 w-20 rounded-full"
                   src={person.image}
-                  alt="dev"
+                  alt="devs"
                 />
                 <div className="text-center">
                   <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">

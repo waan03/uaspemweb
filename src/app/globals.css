@@ -31,6 +31,6 @@ html{
   scroll-behavior: smooth;
 }
 
-.current.active{
+.pathname{
   border-bottom: aqua;
 }
