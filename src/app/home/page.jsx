@@ -1,10 +1,20 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { navbar as Navbar } from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import Image from "next/image";
 
 export default function page() {
+  const [animeData, setAnimeData]=useState()
+  const getData=async()=>{
+    const res = await fetch('https://api.jikan.moe/v4/anime?q=One piece&limit=8')
+    const resData=await res.json();
+    setAnimeData(resData.data)
+  }
+  useEffect(()=>{
+    getData()
+  },[])
+
   return (
     <>
       <Navbar />

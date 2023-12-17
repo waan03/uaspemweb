@@ -40,10 +40,6 @@ export default function Login() {
                     type="password"
                     placeholder="Kata Sandi"
                   />
-                  <p className="pt-3  ">
-                    <input type="checkbox" className="px-2" />
-                    <label className="pl-2">Ingat saya </label>
-                  </p>
                 </div>
                 <ButtonLogin />
               </div>
