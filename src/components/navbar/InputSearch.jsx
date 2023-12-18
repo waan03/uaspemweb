@@ -1,6 +1,8 @@
+"use client";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useRouter } from "next/navigation";
 import { useRef } from "react";
+
 
 const InputSearch = () => {
     const searchRef = useRef()

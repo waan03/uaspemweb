@@ -1,7 +1,5 @@
-"use client";
-import React, { useEffect, useState } from "react";
 import { navbar as Navbar } from "@/components/Navbar/Navbar";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/Footer/Footer";
 import ButtonRead from "@/components/elements/button/buttonRead";
 import AnimeList from "@/components/AnimeList";
 import Header from "@/components/AnimeList/Header";
@@ -71,4 +69,4 @@ const Page = async () => {
     </>
   );
 };
-export default Page
+export default Page;

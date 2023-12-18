@@ -1,6 +1,6 @@
 import React from "react";
 import { navbar as Navbar } from "@/components/Navbar/Navbar";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa6";
 
