@@ -13,7 +13,7 @@ const InputSearch = () => {
 
         if(event.key === "Enter" || event.type === "click") {
             event.preventDefault()    
-            router.push(`/home/search/${keyword}`)
+            router.push(`/search/${keyword}`)
         }
     }
 

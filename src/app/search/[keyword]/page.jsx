@@ -1,7 +1,6 @@
 import { getAnimeResponse } from "@/libs/api-libs"
 import AnimeList from "@/components/AnimeList"
 import Header from "@/components/AnimeList/Header"
-import Navbar from "@/components/navbar/Navbar";
 
 const Page = async ({ params }) => {
   const { keyword } = params
@@ -11,7 +10,6 @@ const Page = async ({ params }) => {
 
   return (
     <>
-    <Navbar/>
       <section>
         <Header title={`Pencarian Untuk ${decodedKeyword}...`} />
         <AnimeList api={searchAnime} />
