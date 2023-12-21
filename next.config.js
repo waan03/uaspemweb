@@ -2,7 +2,9 @@
 const nextConfig = {
     output:"export",
     images: {
+        unoptimized: true,
         remotePatterns: [
+            
             {
                 hostname: "cdn.myanimelist.net"
             },
