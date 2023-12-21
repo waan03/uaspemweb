@@ -1,38 +1,37 @@
-"use client";
-import { FaMagnifyingGlass } from "react-icons/fa6";
-import { useRouter } from "next/navigation";
-import { useRef } from "react";
+"use client"
+
+import { MagnifyingGlass } from "@phosphor-icons/react"
+import { useRouter } from "next/navigation"
+import { useRef } from "react"
 
 const InputSearch = () => {
-  const searchRef = useRef();
-  const router = useRouter();
+    const searchRef = useRef()
+    const router = useRouter()
 
-  const handleSearch = (event) => {
-    const keyword = searchRef.current.value;
+    const handleSearch = (event) => {
+        const keyword = searchRef.current.value
 
-    if (!keyword || keyword.trim() == "") return;
+        if(!keyword || keyword.trim() == "") return
 
-    if (event.key === "Enter" || event.type === "click") {
-      event.preventDefault();
-      router.push(`/search/${keyword}`);
+        if(event.key === "Enter" || event.type === "click") {
+            event.preventDefault()    
+            router.push(`/search/${keyword}`)
+        }
     }
-  };
 
-  return (
-    <div className="relative ">
-      <div className="rounded-full">
-        <input
-          placeholder="cari anime..."
-          className="w-full p-2 rounded text-black"
-          ref={searchRef}
-          onKeyDown={handleSearch}
-        />
-        <button className="absolute top-2 end-2" onClick={handleSearch}>
-          <FaMagnifyingGlass size={24} color="15141F" />
-        </button>
-      </div>
-    </div>
-  );
-};
+    return (
+        <div className="relative">
+            <input 
+                placeholder="cari anime..." 
+                className="w-full p-2 rounded" 
+                ref={searchRef}
+                onKeyDown={handleSearch}
+            />
+            <button className="absolute top-2 end-2" onClick={handleSearch}>
+                <MagnifyingGlass size={24} />
+            </button>
+        </div>
+    )
+}
 
-export default InputSearch;
+export default InputSearch
