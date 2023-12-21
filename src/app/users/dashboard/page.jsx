@@ -16,12 +16,6 @@ const Page = async() => {
                 >
                     My Collection
                 </Link>
-                <Link 
-                    href="/users/dashboard/comment"
-                    className="bg-color-accent text-color-dark font-bold px-4 py-3 text-xl"
-                >
-                    My Comment
-                </Link>
             </div>
         </div>
     )

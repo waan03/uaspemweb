@@ -18,14 +18,14 @@ const Page = async () => {
                     return (
                         <Link key={index} href={`/anime/${collect.anime_mal_id}`} className="relative border-2 border-color-accent">
                             <Image
-                                src=""
-                                alt=""
+                                src={collect.anime_image}
+                                alt={collect.anime_image}
                                 width={350}
                                 height={350}
                                 className="w-full"
                             />
                             <div className="absolute flex items-center justify-center bottom-0 w-full bg-color-accent h-16">
-                                <h5 className="text-xl text-center">{collect.anime_mal_id}</h5>
+                                <h5 className="text-xl text-center">{collect.anime_title}</h5>
                             </div>
                         </Link>
                     );
