@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 "use client";
 import React, { useEffect, useState } from "react";
 import { navbar as Navbar } from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import Image from "next/image";
+=======
+import { navbar as Navbar } from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
+>>>>>>> jeki
 import ButtonRead from "@/components/elements/button/buttonRead";
 
 export default function page() {
@@ -21,6 +26,7 @@ export default function page() {
   return (
     <>
       <Navbar />
+<<<<<<< HEAD
       <div className="flex justify-center items-center">
         <img
           src="/assets/images/Home/homepage_1.png"
@@ -31,6 +37,19 @@ export default function page() {
           alt="Kimetsu No Yaiba"
         />
         <div className="absolute text-[#15141F] w-3/5 py-5 grid grid-cols-3 mx-10">
+=======
+      <div className="bg-white">
+        <div className="flex justify-center items-center">
+          <img
+            src="/assets/images/Home/homepage_1.png"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "120%", height: "10%" }} // optional
+            alt="Kimetsu No Yaiba"
+          />
+          <div className="absolute text-[#15141F] w-3/5 py-5 grid grid-cols-3 mx-10">
+>>>>>>> jeki
             <div className="grid grid-cols col-span-2 ">
               <div className="py-10 flex-col">
                 <p className="text-4xl font-bold">KIMETSU NO YAIBA</p>
@@ -46,15 +65,40 @@ export default function page() {
                 </p>
               </div>
               <div>
+<<<<<<< HEAD
                  <ButtonRead/>
+=======
+                <ButtonRead />
+>>>>>>> jeki
               </div>
             </div>
             <div className="">
               <img src="/assets/images/Home/BannerKNY.png" alt="gambar" />
             </div>
+<<<<<<< HEAD
+=======
+          </div>
+>>>>>>> jeki
         </div>
+        <section>
+          <Header
+            title="Paling Populer"
+            linkTitle="Lihat Semua"
+            linkHref="/populer"
+          />
+          <AnimeList api={topAnime} />
+        </section>
+        <section>
+          <Header title="Rekomendasi" />
+          <AnimeList api={recommendedAnime} />
+        </section>
       </div>
       <Footer />
     </>
   );
+<<<<<<< HEAD
 }
+=======
+};
+export default Page;
+>>>>>>> jeki

@@ -1,6 +1,11 @@
 import React from "react";
+<<<<<<< HEAD
 import { navbar as Navbar } from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+=======
+import { navbar as Navbar } from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
+>>>>>>> jeki
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa6";
 

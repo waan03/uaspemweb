@@ -1,7 +1,29 @@
+<<<<<<< HEAD
 import Image from 'next/image'
+=======
+import { navbar as Navbar } from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
+import ButtonRead from "@/components/elements/button/buttonRead";
+import AnimeList from "@/components/AnimeList";
+import Header from "@/components/AnimeList/Header";
+import {
+  getAnimeResponse,
+  getNestedAnimeResponse,
+  reproduce,
+} from "@/libs/api-libs";
+
+const Page = async () => {
+  const topAnime = await getAnimeResponse("top/anime", "limit=8");
+  let recommendedAnime = await getNestedAnimeResponse(
+    "recommendations/anime",
+    "entry"
+  );
+  recommendedAnime = reproduce(recommendedAnime, 4);
+>>>>>>> jeki
 
 export default function Home() {
   return (
+<<<<<<< HEAD
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
@@ -25,8 +47,58 @@ export default function Home() {
               priority
             />
           </a>
+=======
+    <>
+      <Navbar />
+      <div className="bg-white">
+        <div className="flex justify-center items-center">
+          <img
+            src="/assets/images/Home/homepage_1.png"
+            width={0}
+            height={0}
+            sizes="100vw"
+            style={{ width: "120%", height: "10%" }} // optional
+            alt="Kimetsu No Yaiba"
+          />
+          <div className="absolute text-[#15141F] w-3/5 py-5 grid grid-cols-3 mx-10">
+            <div className="grid grid-cols col-span-2 ">
+              <div className="py-10 flex-col">
+                <p className="text-4xl font-bold">KIMETSU NO YAIBA</p>
+                <p>鬼滅の刃</p>
+                <p className="pt-5">
+                  Kimetsu no Yaiba ( terj. har. "Korps Pembasmi Iblis" [4] ),
+                  yang diterbitkan di Indonesia dengan judul Demon Slayer:
+                  Kimetsu no Yaiba, adalah sebuah seri manga Jepang yang ditulis
+                  dan diilustrasikan oleh Koyoharu Gotōge. Ceritanya mengisahkan
+                  tentang Tanjiro Kamado, seorang anak laki-laki yang menjadi
+                  pembasmi iblis setelah keluarganya dibantai oleh iblis dan
+                  adik perempuannya yang bernama Nezuko diubah menjadi iblis.
+                </p>
+              </div>
+              <div>
+                <ButtonRead />
+              </div>
+            </div>
+            <div className="">
+              <img src="/assets/images/Home/BannerKNY.png" alt="gambar" />
+            </div>
+          </div>
+>>>>>>> jeki
         </div>
+        <section>
+          <Header
+            title="Paling Populer"
+            linkTitle="Lihat Semua"
+            linkHref="/populer"
+          />
+          <AnimeList api={topAnime} />
+        </section>
+        <section>
+          <Header title="Rekomendasi" />
+          <AnimeList api={recommendedAnime} />
+        </section>
       </div>
+<<<<<<< HEAD
 
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
         <Image
@@ -111,3 +183,10 @@ export default function Home() {
     </main>
   )
 }
+=======
+      <Footer />
+    </>
+  );
+};
+export default Page;
+>>>>>>> jeki

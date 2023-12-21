@@ -1,20 +1,21 @@
 "use client";
 import React from "react";
 import { FaUser } from "react-icons/fa";
-import Image from "next/image";
-import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+<<<<<<< HEAD
+=======
+import InputSearch from "./InputSearch";
+>>>>>>> jeki
 
 const navigation = [
-  { name: "Home", href: "/home", current: false },
+  { name: "Home", href: "/", current: false },
   { name: "My List", href: "/myList", current: false },
   { name: "About Us", href: "/aboutUs", current: false },
 ];
 
 export function navbar() {
   const pathname = usePathname();
-  const [active, setActive] = useState(false);
   return (
     <>
       <header className="sticky top-0 z-30 w-full p-0 shadow drop-shadow flex ">
@@ -34,14 +35,21 @@ export function navbar() {
               <div className="ml-10 flex items-baseline space-x-4">
                 {navigation.map((item) => (
                   <Link
+                    key="{item}"
                     href={item.href}
-                    className={pathname == "/home" ? "active" : ""}
+                    className={pathname == "/" ? "active" : ""}
                   >
                     {item.name}
                   </Link>
                 ))}
               </div>
             </div>
+<<<<<<< HEAD
+=======
+
+            <InputSearch />
+
+>>>>>>> jeki
             <div className="bg-white w-64 h-14 py-8 flex items-center rounded-l-full">
               <a href="/user">
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">
