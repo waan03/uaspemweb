@@ -9,6 +9,10 @@ datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5563495fbdb582855e28429d8573a666c6c1d3db
 model Collection {
   id              Int @id @default(autoincrement())
   anime_mal_id    String

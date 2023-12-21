@@ -1,4 +1,5 @@
-const config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,7 +13,14 @@ const config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
+    colors: {
+      color: {
+        primary: '#eeeeee',
+        accent: '#ffc639',
+        secondary: '#393e46',
+        dark: '#222831'
+      }
+    }
   },
   plugins: [],
 }
-export default config

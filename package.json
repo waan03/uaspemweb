@@ -1,5 +1,5 @@
 {
-  "name": "pemwebeuy",
+  "name": "cuyanimelist",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -12,23 +12,30 @@
     "@phosphor-icons/react": "^2.0.13",
     "@prisma/client": "^5.6.0",
     "eslint-config-next": "^14.0.3",
+<<<<<<< HEAD
     "next": "14.0.3",
     "next-auth": "^4.24.4",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.12.0",
+=======
+    "next": "^14.0.3",
+    "next-auth": "^4.24.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+>>>>>>> 5563495fbdb582855e28429d8573a666c6c1d3db
     "react-youtube": "^10.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.3",
+    "autoprefixer": "^10",
     "postcss": "^8",
+<<<<<<< HEAD
     "prisma": "^5.7.1",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+=======
+    "prisma": "^5.6.0",
+    "tailwindcss": "^3"
+>>>>>>> 5563495fbdb582855e28429d8573a666c6c1d3db
   }
 }
