@@ -3,10 +3,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import InputSearch from "./InputSearch";
 import React from 'react'
+import UserActionButton from "./UserActionButton";
 const navigation = [
   { name: "Home", href: "/", current: false },
-  { name: "My List", href: "/myList", current: false },
+  { name: "My List", href: "/users/dashboard/collection", current: false },
   { name: "About Us", href: "/aboutUs", current: false },
+  {name: "Profile", href:"/users/dashboard", current: false},
+  {name: "Log Out", href:"/api/auth/signout", current:false},
 ];
 
 const Navbar = () => {
@@ -42,7 +45,7 @@ const Navbar = () => {
 
             <InputSearch />
             <div></div>
-
+            {/* <UserActionButton /> */}
             {/* <div className="bg-white w-64 h-14 py-8 flex items-center rounded-l-full">
               <a href="/user">
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-md">

@@ -1,3 +1,4 @@
+"use server"
 import { getServerSession } from "next-auth"
 import { authOption } from "@/app/api/auth/[...nextauth]/route"
 
