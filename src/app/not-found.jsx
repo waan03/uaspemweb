@@ -18,8 +18,8 @@ export default function NotFound() {
         style={{ width: "20%", height: "30%" }}
         alt="404"
       />
-      <div className="border-black border rounded-lg bg-black p-2 px-8">
-        <Link href="/">Return Home</Link>
+      <div className="">
+        <Link className="border-black border rounded-lg bg-black p-2 px-8" href="/">Return Home</Link>
       </div>
     </div>
   );

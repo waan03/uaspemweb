@@ -1,9 +1,9 @@
 import React from 'react'
 
-const populerAnime = () => {
+const page = () => {
   return (
-    <div>populerAnime</div>
+    <div>page</div>
   )
 }
 
-export default populerAnime
+export default page
