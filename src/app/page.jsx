@@ -17,7 +17,6 @@ const Page = async () => {
   );
   recommendedAnime = reproduce(recommendedAnime, 4);
 
-export default function Home() {
   return (
     <>
       <Navbar />
@@ -72,5 +71,4 @@ export default function Home() {
     </>
   );
 };
-
 export default Page;
