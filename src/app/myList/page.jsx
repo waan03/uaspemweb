@@ -1,15 +1,8 @@
 "use client";
-<<<<<<< HEAD
-import React from 'react'
-import { navbar as Navbar } from "@/components/navbar/Navbar"; 
-import Footer from '@/components/footer/Footer';
-import Image from 'next/image';
-=======
 import React from "react";
 import { navbar as Navbar } from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import Image from "next/image";
->>>>>>> jeki
 
 export default function page() {
   return (
