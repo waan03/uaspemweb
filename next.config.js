@@ -1,7 +1,4 @@
 /** @type {import('next').NextConfig} */
-<<<<<<< HEAD
-const nextConfig = {}
-=======
 const nextConfig = {
     output:"export",
     images: {
@@ -15,6 +12,5 @@ const nextConfig = {
         ]
     }
 }
->>>>>>> jeki
 
 module.exports = nextConfig
