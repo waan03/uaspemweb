@@ -1,5 +1,5 @@
 import { navbar as Navbar } from "@/components/Navbar/Navbar";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/Footer/Footer";
 import React from "react";
 
 const user = () => {

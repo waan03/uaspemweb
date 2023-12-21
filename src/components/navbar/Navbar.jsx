@@ -19,7 +19,7 @@ export function navbar() {
         <div className="bg-[#15141F] w-full p-0 h-auto z-40">
           <div className="py-8 pl-32 flex justify-between items-center">
             <div>
-              <a href="/home#">
+              <a href="#">
                 <img
                   src="/assets/images/logo.svg"
                   width={150}
@@ -33,7 +33,7 @@ export function navbar() {
                 {navigation.map((item) => (
                   <Link
                     href={item.href}
-                    className={pathname == "/home" ? "active" : ""}
+                    className={pathname == "/" ? "active" : ""}
                   >
                     {item.name}
                   </Link>
