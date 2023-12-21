@@ -4,6 +4,8 @@ import Image from "next/image"
 import CollectionButton from "@/components/AnimeList/CollectionButton"
 import { authUserSession } from "@/libs/auth-libs"
 import prisma from "@/libs/prisma"
+import Navbar from "@/components/Navbar/Navbar"
+import Footer from "@/components/Footer/Footer"
 
 const Page = async ({ params: { id } }) => {
     const anime = await getAnimeResponse(`anime/${id}`)
@@ -15,6 +17,7 @@ const Page = async ({ params: { id } }) => {
 
     return (
         <>
+        <Navbar/>
             <div className="pt-4 px-4">
                 <h3 className="text-2xl text-color-primary">{anime.data.title} - {anime.data.year}</h3>
                 {
@@ -49,7 +52,7 @@ const Page = async ({ params: { id } }) => {
                 />
                 <p className="text-justify text-xl">{anime.data.synopsis}</p>
             </div>
-            <div>
+            <div className="h">
                 <VideoPlayer youtubeId={anime.data.trailer.youtube_id}/>
             </div>
         </>
