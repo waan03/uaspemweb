@@ -1,12 +1,12 @@
-"use client"
+"use client";
 import React from "react";
 import { FaUser } from "react-icons/fa";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import InputSearch from "./InputSearch"
+import InputSearch from "./InputSearch";
 
 const navigation = [
-  { name: "Home", href: "/home", current: false },
+  { name: "Home", href: "/", current: false },
   { name: "My List", href: "/myList", current: false },
   { name: "About Us", href: "/aboutUs", current: false },
 ];
@@ -32,6 +32,7 @@ export function navbar() {
               <div className="ml-10 flex items-baseline space-x-4">
                 {navigation.map((item) => (
                   <Link
+                    key="{item}"
                     href={item.href}
                     className={pathname == "/" ? "active" : ""}
                   >
@@ -41,7 +42,7 @@ export function navbar() {
               </div>
             </div>
 
-            <InputSearch/>
+            <InputSearch />
 
             <div className="bg-white w-64 h-14 py-8 flex items-center rounded-l-full">
               <a href="/user">
