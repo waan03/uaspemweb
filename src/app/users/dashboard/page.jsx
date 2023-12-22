@@ -1,5 +1,5 @@
 import Footer from "@/components/Footer/Footer"
-import Navbar from "@/components/Navbar/Navbar"
+import Navbar from "@/components/asdhj/Navbar"
 import { authUserSession } from "@/libs/auth-libs"
 import Image from "next/image"
 import Link from "next/link"

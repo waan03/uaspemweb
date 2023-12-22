@@ -4,7 +4,7 @@ import Image from "next/image"
 import CollectionButton from "@/components/AnimeList/CollectionButton"
 import { authUserSession } from "@/libs/auth-libs"
 import prisma from "@/libs/prisma"
-import Navbar from "@/components/Navbar/Navbar"
+import Navbar from "@/components/asdhj/Navbar"
 import Footer from "@/components/Footer/Footer"
 
 const Page = async ({ params: { id } }) => {
