@@ -8,6 +8,7 @@ import {
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import ButtonRead from "@/components/elements/button/buttonRead";
+import Image from "next/image"
 
 const Page = async () => {
   const topAnime = await getAnimeResponse("top/anime", "limit=8");
