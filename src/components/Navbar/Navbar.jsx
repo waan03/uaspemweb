@@ -9,7 +9,7 @@ const navigation = [
   { name: "My List", href: "/users/dashboard/collection", current: false },
   { name: "About Us", href: "/aboutUs", current: false },
   {name: "Profile", href:"/users/dashboard", current: false},
-  {name: "Log Out", href:"/api/auth/signout", current:false},
+  {name: "Sign Out", href:"/api/auth/signout", current:false},
 ];
 
 const Navbar = () => {
