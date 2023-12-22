@@ -23,7 +23,7 @@ const Page = async () => {
       <div className="bg-white">
         <div className="flex justify-center items-center">
           <img
-            src="/assets/images/Home/homepage_1.png"
+            src="/assets/images/home/homepage_1.png"
             width={0}
             height={0}
             sizes="100vw"
@@ -50,7 +50,7 @@ const Page = async () => {
               </div>
             </div>
             <div className="">
-              <img src="/assets/images/Home/BannerKNY.png" alt="bannerKNY" />
+              <img src="/assets/images/home/BannerKNY.png" alt="bannerKNY" />
             </div>
           </div>
         </div>
