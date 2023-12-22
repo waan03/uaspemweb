@@ -8,6 +8,7 @@ import {
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import ButtonRead from "@/components/elements/button/buttonRead";
+import Image from "next/image"
 
 const Page = async () => {
   const topAnime = await getAnimeResponse("top/anime", "limit=8");
@@ -22,7 +23,7 @@ const Page = async () => {
       <Navbar />
       <div className="bg-white">
         <div className="flex justify-center items-center">
-          <img
+          <Image
             src="/assets/images/Home/homepage_1.png"
             width={0}
             height={0}
