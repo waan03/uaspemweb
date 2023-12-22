@@ -3,7 +3,7 @@ import Link from "next/link";
 import Header from "@/components/Dashboard/Header";
 import { authUserSession } from "@/libs/auth-libs";
 import prisma from "@/libs/prisma";
-import Navbar from "@/components/asdhj/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 
 

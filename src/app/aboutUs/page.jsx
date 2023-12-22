@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar  from "@/components/asdhj/Navbar";
+import Navbar  from "@/components/Navbar/Navbar";
 import Footer  from "@/components/Footer/Footer";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa6";

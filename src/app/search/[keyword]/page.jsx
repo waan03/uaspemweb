@@ -1,7 +1,7 @@
 import { getAnimeResponse } from "@/libs/api-libs";
 import AnimeList from "@/components/AnimeList";
 import Header from "@/components/AnimeList/Header";
-import Navbar  from "@/components/asdhj/Navbar";
+import Navbar  from "@/components/Navbar/Navbar";
 import Footer  from "@/components/Footer/Footer";
 
 const Page = async ({ params }) => {

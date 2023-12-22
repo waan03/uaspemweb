@@ -5,7 +5,7 @@ import {
   getNestedAnimeResponse,
   reproduce,
 } from "@/libs/api-libs";
-import Navbar from "@/components/asdhj/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
 import ButtonRead from "@/components/elements/button/buttonRead";
 
